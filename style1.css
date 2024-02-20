@@ -1,0 +1,145 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333333;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+    background-color: #3498db;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #2ecc71;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #333333;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+header h2, header h3, header h4 {
+    color: #fff;
+}
+header h1, header h2, header h3, header h4 {
+	margin:5px 0;
+}
+
+h2, h3, h4 {
+    color: #3498db;
+}
+
+#intro img {
+	border-radius:50%;
+	float: right;
+}
+#intro h3 {
+	margin-top:0;
+}
+
+#services ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+	padding: 0;
+}
+
+#services li {
+    background-color: #2ecc71;
+    color: #333333;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+#socials table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#socials td {
+    padding: 8px;
+    border-bottom: 1px solid #333333;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contact {
+  margin-bottom: 60px;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #3498db;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #3498db;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* nav design - stroke */
+nav a {
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav a,
+nav a:after,
+nav a:before {
+  transition: all .5s;
+}
+nav a {
+  position: relative;
+}
+nav a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #333;
+  height: 1px;
+}
+nav a:hover:after {
+  width: 100%;
+}

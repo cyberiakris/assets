@@ -1,0 +1,331 @@
+/* Import Font Awesome 4 directly in CSS */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+/* Reset some default styles for better consistency */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif; /* Choose an appropriate font */
+  background-color: #ecf0f1; /* Light Grey background for the body */
+  color: #333333; /* Charcoal text color */
+}
+
+/* Header styles */
+header {
+  background-color: #95a5a6; /* Steel Blue header background */
+  color: #663399; /* White text color */
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #e74c3c; /* Dark Salmon navigation background */
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #ffffff; /* White link text color */
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Section styles */
+section {
+  padding: 20px;
+}
+
+/* Contact section styles */
+#contact {
+  background-color: #95a5a6; /* Steel Blue background for contact section */
+  color: #ffffff; /* White text color */
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contact label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333333; /* Charcoal label text color */
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #e74c3c; /* Dark Salmon border for input fields */
+  border-radius: 5px;
+}
+
+#contact input[type="submit"] {
+  background-color: #e74c3c; /* Dark Salmon background for submit button */
+  color: #ffffff; /* White text color for submit button */
+  cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+  background: linear-gradient(to right, #663399, #8a60af); /* Gradient background with Royal Purple tones */
+  color: #ffffff; /* White text color */
+  text-align: center;
+  padding: 20px; /* Increased padding for a more prominent look */
+  box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Optional: Add a hover effect */
+footer:hover {
+  background: linear-gradient(to right, #8a60af, #663399); /* Reverse the gradient on hover */
+}
+
+
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+}
+
+/* Additional styles for Pair 3 - Urban, Edgy, Interactive Storytelling */
+
+/* Header styles */
+header {
+  position: relative;
+  overflow: hidden;
+}
+
+header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)); 
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+/* Section styles */
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #e74c3c, #333333); /* Gradient overlay for an edgy effect */
+  z-index: -1;
+}
+
+/* Introduction section styles */
+#intro {
+  color: #ffffff; /* White text color */
+}
+
+#intro img {
+  border-radius: 50%;
+}
+
+
+
+/* Custom styles for services cards */
+#services ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+	padding:0;
+}
+
+#services li {
+    background-color: #95a5a6;
+    color: #333333;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  section::before {
+    background: linear-gradient(to right, #e74c3c, #333333); /* Adjusted gradient overlay for responsiveness */
+  }
+
+  #services li::before {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)); /* Adjusted gradient overlay for responsiveness */
+  }
+}
+
+/* Additional styles for #intro content */
+
+#intro {
+  position: relative;
+}
+
+#intro h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+#intro p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+#intro img {
+  width: 100%;
+  max-width: 300px;
+  border: 6px solid #663399; /* Dark Salmon border for an edgy look */
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  #intro h3 {
+    font-size: 20px;
+  }
+
+  #intro p {
+    font-size: 16px;
+  }
+}
+
+
+#socials table {
+  width: auto;
+  margin-top: 0;
+  border-collapse: collapse;
+}
+
+#socials td {
+  padding: 12px;
+  border-bottom: 2px solid #2d3436;
+}
+
+#socials a {
+  color: #2d3436;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+
+/* nav design - Blend */
+nav a {
+  display: inline-block;
+  padding: 10px 5px;
+  text-decoration: none;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav a,
+nav a:after,
+nav a:before {
+  transition: all .5s;
+}
+nav a {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1;
+}
+nav a:hover {
+  color: #fff;
+}
+nav a:before,
+nav a:after {
+  position: absolute;
+  width: 0px;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  background: #663399;
+  transition: all .5s;
+  margin: auto;
+  content: '.';
+  color: transparent;
+  z-index: -1;
+  opacity: 0.75;
+}
+nav a:before {
+  left: 0;
+}
+nav a:after {
+  right: 0;
+}
+
+nav a:hover:after,
+nav a:hover:before {
+  width: 100%;
+}
+
+
+/* Font Awesome icons added with CSS */
+#socials a[href^="https://www.linkedin.com"]::before {
+  font-family: 'FontAwesome';
+  content: '\f0e1'; /* LinkedIn icon code */
+  font-size:2em;
+  color: #663399;
+}
+
+#socials a[href^="https://twitter.com"]::before {
+  font-family: 'FontAwesome';
+  content: '\f099'; /* Twitter icon code */
+  font-size:2em;
+  color: #663399;
+}
+
+#socials a[href^="https://github.com"]::before {
+  font-family: 'FontAwesome';
+  content: '\f09b'; /* GitHub icon code */
+  font-size:2em;
+  color: #663399;
+}
+
+/* Styles for the 'back to top' arrow button */
+body::before {
+  content: '\f062'; /* Font Awesome up-arrow icon code */
+  font-family: 'FontAwesome';
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #663399; /* Electric Blue background color */
+  color: #ffffff; /* White text color */
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 18px;
+  display: block;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  z-index:999;
+}
+
+
