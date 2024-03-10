@@ -1,0 +1,143 @@
+/* ************ */  
+/* Basic styles */   
+/* ************ */ 
+
+* {box-sizing: border-box;}
+
+html, body, a {font-family: "Ubuntu", sans-serif; font-weight: 300; color: #9498a7;}
+
+body {background: #eff7ff;}
+
+a {text-decoration: none;}
+
+h1 {padding: 170px 0 100px; text-align: center; font-size: 2.4em; color: #35394b;}
+
+/* *************** */
+/* Specific styles */
+/* *************** */
+
+nav {
+    position: fixed;
+    width: 100%;
+    text-align: center; 
+    height: 70px;
+    padding: 10px;
+    line-height: 50px;
+    top:-100px;
+    background: none;
+    overflow:hidden;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: 999;
+}
+nav a {
+    padding: 0 20px;
+    margin: 0 10px;
+    display: inline-block;
+    border: 1px solid #9498a7;
+}
+
+.scrolled {
+    background-color: rgba(239, 247, 255, 0.7);
+    opacity: 1;
+    top: 0px;
+    border-bottom: 1px solid gainsboro;
+}
+
+section {
+    position: relative;
+    height: 100vh;
+}
+
+/* Petit trick pour centrer horizontalement et verticalement un élément, merci Codyhouse */
+
+section span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+    font-size: 2em;
+    color: #35394b;
+}
+
+#section-1 {background: #40b1d0;}
+#section-2 {background: #f4d246;}
+#section-3 {background: #ff987e;}
+#section-4 {background: #ad8bd4;}
+
+/* customizations */
+h1 { 
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: white;
+}
+body { 
+	background:url('assets/1.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+#section-1 { 
+	background:url('assets/2.jpg') no-repeat;
+	background-size: cover;
+}
+#section-1::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(64,177,208,0.75);
+}
+#section-1 span {
+	color:#000;
+}
+#section-2 { 
+	background:url('assets/3.jpg') no-repeat;
+	background-size: cover;
+}
+#section-2::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(244,210,70,0.75);
+}
+#section-2 span {
+	color:#fff;
+}
+#section-3 { 
+	background:url('assets/4.jpg') no-repeat;
+	background-size: cover;
+}
+#section-3::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(255,152,126,0.75);
+}
+#section-3 span {
+	/* color:#000; */
+}
+#section-4 { 
+	background:url('assets/5.jpg') no-repeat;
+	background-size: cover;
+}
+#section-4::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(173,139,212,0.75);
+}
+#section-4 span {
+	color:#fff;
+}
+
